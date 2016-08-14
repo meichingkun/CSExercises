@@ -21,13 +21,22 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             //YOUR CODE HERE
+            Console.Write("Please enter a number: ");
+            string inputDbl = Console.ReadLine();
+            double outputDbl = Convert.ToDouble(inputDbl);
+
+            string result = SQRT(outputDbl);
+            Console.WriteLine("The square root of the number is " + result + " (rounded to 3 decimal places)");
         }
 
         public static string SQRT(double x)
         {
             //YOUR CODE HERE: return the square root of x and then use String.Format 
-            //to format it. The format is similar to WriteLine
-            return null;
+            //to format it. The format is similar to WriteLine             
+            double dbl = Math.Sqrt(x);            
+            string value = string.Format("{0:f3}", dbl);
+            
+            return(value);
 
         }
     }

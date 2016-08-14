@@ -19,14 +19,32 @@ namespace CSExercises
 
         public static void Main(string[] args)
         {
-            //YOUR CODE HERE
+           Console.Write("Please input value of a: ");
+            string inputA = Console.ReadLine();
+            Console.Write("Please input value of b: ");
+            string inputB = Console.ReadLine();
+            Console.Write("Please input value of c: ");
+            string inputC = Console.ReadLine();
+
+            double A = Convert.ToDouble(inputA);
+            double B = Convert.ToDouble(inputB);
+            double C = Convert.ToDouble(inputC);
+
+            double result = CalculateArea(A, B, C);
+            if (double.IsNaN(result))
+                Console.WriteLine("Please check your input as squareroot of negative number could not be calculated");
+            else
+                Console.WriteLine("The area of the triangle is " + result + ".");
+                      
 
         }
 
         public static double CalculateArea(double a, double b, double c)
         {
-            //YOUR CODE HERE
-            return 0;
+            double s = (a + b + c) / 2;
+            double area = Math.Sqrt(s*(s - a)*(s - b)*(s - c));
+           
+            return (area);
         }
     }
 }

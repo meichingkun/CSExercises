@@ -16,12 +16,22 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             //YOUR CODE HERE
+            Console.Write("Please input the distance travelled: ");
+            string meterInput = Console.ReadLine();
+            double meter = Convert.ToDouble(meterInput);
+
+            double total = CalculateFare(meter);
+
+            Console.WriteLine("The total fare is {0:0.00}. (rounded to nearest 10 cents)", total);
         }
 
         public static double CalculateFare(double distance)
         {
             //YOUR CODE HERE
-            return 0;
+            double charge = 2.40 + distance * 0.4;
+            double pay = Math.Round(charge, 1);
+           
+            return (pay);            
 
         }
     }

@@ -20,10 +20,13 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
+            Console.Write("Please enter a number: ");
             string inputStr = Console.ReadLine();
             double inputDbl = Convert.ToDouble(inputStr);
 
-            //YOUR CODE HERE
+            Console.WriteLine("{0:0.00} (rounded to 2 decimal points)", inputDbl);
+
+
 
         }
 
