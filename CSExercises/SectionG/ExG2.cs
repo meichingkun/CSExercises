@@ -32,6 +32,9 @@ namespace CSExercises
         public static bool IsPalindrome(string phrase)
         {
             //YOUR CODE HERE
+            bool IsPalindrome = true;
+
+
             return false;
 
 

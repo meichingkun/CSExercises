@@ -21,7 +21,7 @@ namespace CSExercises
             int n = Convert.ToInt32(Console.ReadLine());
 
 
-            if (IsPrime(n))
+            if (IsPrime(n) == true)
             {
                 Console.WriteLine("Prime");
             }
@@ -34,7 +34,26 @@ namespace CSExercises
         public static bool IsPrime(int n)
         {
             //YOUR CODE HERE
-            return false;
+            if(n<2)
+            {
+                return false;
+            }
+            bool IsPrime = true;
+            for(int num = 2;num <= n-1; num++)
+            {
+                if (n % num == 0)
+                {
+                    IsPrime=false;
+                    break;
+                }     
+                else
+                {
+                    IsPrime = true;
+                }        
+                    
+            }
+
+            return IsPrime;
 
 
         }

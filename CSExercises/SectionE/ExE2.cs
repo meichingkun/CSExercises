@@ -21,8 +21,19 @@ namespace CSExercises
     public class ExE2
     {
         public static void Main(string[] args)
+        //YOUR CODE HERE
         {
-            //YOUR CODE HERE
+            Console.WriteLine("NO \t INVERSE \t SQUARE ROOT \t SQUARE");
+            Console.WriteLine("---------------------------------------------------");
+            for (double num =1; num <=10; num++)
+            {
+                double inverse = 1 / num;
+                double squareRoot = Math.Sqrt(num);
+                double square = num * num;
+
+                Console.WriteLine("{0:0.0}  \t  {1:0.000}  \t   {2:0.000}   \t   {3:0.0}", num, inverse, squareRoot, square);
+            }
+
         }
     }
 }

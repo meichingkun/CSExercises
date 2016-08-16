@@ -11,9 +11,14 @@ namespace CSExercises
         {
             //YOUR CODE HERE
             //Hint: you can use ExE4.IsPerfectNumber() method here
-
-
-
+            for (int num = 1; num <= 1000; num++)
+            {
+                if (ExE4.IsPerfectNumber(num) == true)
+                {
+                    Console.WriteLine(num);
+                }
+            }
+                      
         }
     }
 }

@@ -31,7 +31,13 @@ namespace CSExercises
         public static int CalculateFactorialInc(int n)
         {
             //YOUR CODE HERE
-            return 0;
+            int fact1 = 0;
+            for (int i = 1; i <= n; i++) 
+            {
+                fact1 = fact1 + i;
+            }
+
+            return (fact1);
 
 
         }
@@ -39,7 +45,12 @@ namespace CSExercises
         public static int CalculateFactorialDec(int n)
         {
             //YOUR CODE HERE
-            return 0;
+            int fact2 = 0;
+            for (int i = n; i >0; i--)
+            {
+                fact2 = fact2 + i;
+            }
+            return (fact2);
 
 
         }

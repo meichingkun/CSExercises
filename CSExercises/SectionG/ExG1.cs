@@ -32,6 +32,7 @@ namespace CSExercises
         public static int CountVowels(string phrase)
         {
             //YOUR CODE HERE
+
             return 0;
 
 
@@ -41,7 +42,44 @@ namespace CSExercises
         {
             int[] vowelCount = new int[5];
             //YOUR CODE HERE
-
+            int counterA = 0;
+            int counterE = 0;
+            int counterI = 0;
+            int counterO = 0;
+            int counterU = 0;
+           
+                string test = phrase.ToLower();
+                
+                string s = test.Substring(0, 1);                          
+                for (int i = 0; i < s.Length; i++)
+                    
+                { 
+                switch (s)
+                {
+                    case "a":
+                        counterA++;
+                        Console.WriteLine("No. of \"a\": {0}", counterA);
+                        break;
+                    case "e":
+                        counterE++;
+                        Console.WriteLine("No. of \"e\": {0}", counterE);
+                        break;
+                    case "i":
+                        counterI++;
+                        Console.WriteLine("No. of \"i\": {0}", counterI);
+                        break;
+                    case "o":
+                        counterO++;
+                        Console.WriteLine("No. of \"o\": {0}", counterO);
+                        break;
+                    case "u":
+                        counterU++;
+                        Console.WriteLine("No. of \"u\": {0}", counterU);
+                        break;
+                }
+                
+            }
+             
 
 
             return vowelCount;
